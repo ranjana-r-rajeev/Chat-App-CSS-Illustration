@@ -1,0 +1,292 @@
+$light-magenta: hsl(293, 100%, 63%);
+$light-violet: hsl(264, 100%, 61%);
+$moderate-violet: hsl(276, 55%, 52%);
+$desaturated-dark-violet: hsl(271, 15%, 43%);
+$grayish-blue: hsl(206, 6%, 79%);
+$very-dark-violet: hsl(271, 36%, 24%);
+$white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 20%, 96%);
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+}
+
+.main {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.color-body {
+  background-image: linear-gradient(to bottom , $light-magenta, $light-violet);
+  height: 550px;
+  width: 30%;
+  border-radius: 0 0 200px 200px;
+  margin-left: -5%;
+}
+
+.text-body {
+  background-color: hsl(290deg 37.5% 96.86%);
+  height: 550px;
+  width: 38%;
+  border-radius: 200px 200px 0 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: -18%;
+}
+
+.phone-div {
+  margin-top: 4%;
+  background-color: $white;
+  height: 530px;
+  width: 280px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 8px $grayish-blue;
+  margin-left: 24px;
+}
+
+.screen {
+  background-color: $white;
+  height: 500px;
+  width: 92%;
+  border-radius: 20px;
+  margin: 10px 0px 0px 0px;
+}
+
+.header-div {
+  background-image: linear-gradient(to right, $light-violet , $light-magenta);
+  height: 55px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.white-space {
+  background-color: $white;
+  width: 50%;
+  height: 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+.contact-title {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.back-icon {
+  margin-top: 16px;
+  margin-left: 10px;
+  color: $white;
+}
+
+.avatar-img {
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.avatar-img img {
+  height: 28px;
+  border-radius: 20px;
+  border-color: $white;
+  border-style: solid;
+}
+
+.contact {
+  margin-top: 8px;
+  size: 8px;
+  margin-left: 10px;
+  color: $white;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.sub-title {
+  font-size: 10px;
+}
+
+.setting-icon {
+  margin-top: 16px;
+  color: $white;
+  right: -65px;
+  position: absolute;
+}
+
+.body {
+  background-color: $light-grayish-violet;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px 0 10px 10px;
+}
+
+.message-1 {
+  background-color: $grayish-blue;
+  font-size: 11px;
+  width: 56%;
+  margin-left: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  padding: 5px;
+  color: $moderate-violet;
+}
+
+.message-2 {
+  background-color: $white;
+  font-size: 11px;
+  width: 56%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  color: $desaturated-dark-violet;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.message-3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  background-image: linear-gradient(to right, $light-violet , $light-magenta);
+  color: $white;
+  padding: 8px;
+  font-size: 11px;
+  width: 56%;
+  border-radius: 10px;
+}
+
+.bottom-placeholder {
+  width: 115%;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: $white;
+  border: 1px solid $white;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.bottom-button {
+  margin-top: 12px;
+  margin-left: 17px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: $very-dark-violet;
+  outline: none;
+}
+
+.bottom-placeholder:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+.bottom-button i {
+  font-size: 25px;
+}
+
+.dog-img {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.dog-img img {
+  height: 55px;
+  border-radius: 10px;
+}
+
+.message-3 i {
+  margin-top: 3px;
+}
+
+.text {
+  font-size: 11px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.number {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.div-2 {
+  width: 410px;
+  margin-top: 17%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.body-text {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .color-body .text-body {
+    height: auto;
+    width: 90%;
+    margin: 0;
+  }
+
+  .color-body {
+    height: 300px;
+    border-radius: 0px 0px 50px 0;
+  }
+
+  .text-body {
+    height: 300px;
+    border-radius: 50px 0px 0 0;
+    margin-bottom: -150px;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .phone-div {
+    margin-left: 60px;
+    margin-top: 50px;
+    width: 80%;
+    box-shadow: 0px 4px 8px $grayish-blue;
+  }
+
+  .div-2 {
+    width: 90%;
+    margin-left: 60px;
+  }
+}
